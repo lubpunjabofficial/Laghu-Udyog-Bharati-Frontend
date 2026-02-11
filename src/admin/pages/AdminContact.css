@@ -1,0 +1,102 @@
+/* Wrapper */
+.admin-contact-wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.admin-contact-wrapper h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Messages grid */
+.messages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.message-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.message-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #ffd000;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #16a085;
+}
+
+/* Body */
+.message-body p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.user-message {
+  background-color: #f5f7fa;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* No messages */
+.no-messages {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .admin-contact-wrapper {
+    padding: 15px;
+  }
+
+  .message-card {
+    padding: 15px;
+  }
+}

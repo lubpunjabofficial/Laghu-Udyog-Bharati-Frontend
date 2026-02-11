@@ -1,0 +1,93 @@
+.clean-news-wrapper {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 40px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: transparent; /* Box wala background khatam */
+}
+
+/* Navigation Style */
+.navigation-area {
+  margin-bottom: 40px;
+}
+
+.back-link-text {
+  font-size: 15px;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  
+}
+
+.back-link-text:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Headline - No box, just clean text */
+.news-main-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+.news-date-line {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Image - Edge to Edge in container */
+.news-hero-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.news-hero-img img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 4px; /* Bahot minimal radius */
+}
+
+/* Body Content - Completely open */
+.news-text-content {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #2c2c2c;
+  max-width: 850px; /* Reading ke liye width limit ki hai par bina box ke */
+}
+
+.news-text-content p {
+  margin-bottom: 28px;
+  text-align: justify;
+}
+
+/* Status Loading */
+.news-status {
+  text-align: center;
+  padding: 100px;
+  font-size: 18px;
+  color: #999;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .news-main-title {
+    font-size: 32px;
+  }
+  .clean-news-wrapper {
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  .news-text-content {
+    font-size: 18px;
+  }
+}

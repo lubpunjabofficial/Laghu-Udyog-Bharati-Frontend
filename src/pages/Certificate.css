@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+.certificate-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  background: #f9f6f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.link {
+  color: red;
+  font-weight: 500;
+}
+
+.section-title {
+  color: red;
+  font-size: 18px;
+  margin: 25px 0 10px;
+}
+
+.list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+}

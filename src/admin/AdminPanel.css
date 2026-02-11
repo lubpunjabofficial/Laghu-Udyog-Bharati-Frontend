@@ -1,0 +1,151 @@
+/* Container */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Desktop Sidebar */
+.sidebar {
+  width: 230px;
+  background: #34495e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 12px rgb(0 0 0 / 0.15);
+}
+
+.sidebar-header {
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1.3px;
+  text-align: center;
+  background: #2c3e50;
+}
+
+.sidebar-nav {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.sidebar-nav a.active,
+.sidebar-nav a:hover {
+  background: #1abc9c;
+  transform: translateX(5px);
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.6);
+}
+
+/* Main Content */
+.admin-main {
+  flex: 1;
+  padding: 2rem;
+  background: #ecf0f1;
+  overflow-x: auto;
+}
+
+/* Mobile Buttons Panel */
+.mobile-buttons-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  padding: 1rem 1.5rem 1.5rem;
+  box-sizing: border-box;
+  z-index: 1500;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.3);
+  animation: slideDown 0.35s ease forwards;
+  user-select: none;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Close Button */
+.close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  float: right;
+  padding: 0;
+  margin: 0 0 10px 0;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg);
+}
+
+/* Mobile Nav Buttons Container */
+.mobile-nav-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Buttons styles */
+.mobile-nav-buttons .btn {
+  padding: 14px 10px;
+  color: white;
+  border-radius: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.mobile-nav-buttons .btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.3);
+}
+
+/* Icon inside button */
+.mobile-nav-buttons .icon {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+/* Label */
+.mobile-nav-buttons .label {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 769px) {
+  .mobile-buttons-panel {
+    display: none;
+  }
+}

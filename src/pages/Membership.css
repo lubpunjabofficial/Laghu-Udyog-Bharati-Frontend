@@ -1,0 +1,70 @@
+.membership-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f6f2;
+  color: #333;
+}
+
+.membership-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.membership-intro {
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.membership-text {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card h3 {
+  color: #b40000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.membership-footer {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .membership-title {
+    font-size: 24px;
+  }
+
+  .benefit-card h3 {
+    font-size: 16px;
+  }
+}

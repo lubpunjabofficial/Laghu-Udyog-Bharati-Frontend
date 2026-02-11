@@ -1,0 +1,109 @@
+/* Page background */
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Main card */
+.contact-card {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  gap: 40px;
+  padding: 50px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Left side */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.contact-details {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Right side form */
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+}
+
+.contact-right button {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background: #222;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-card {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .contact-left h1 {
+    font-size: 2.2rem;
+  }
+}
+
+.error-msg {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 5px 0 10px 0;
+}
+

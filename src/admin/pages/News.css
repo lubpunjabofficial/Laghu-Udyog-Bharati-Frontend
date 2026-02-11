@@ -1,0 +1,167 @@
+.news-page-wrapper {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.news-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+.news-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.news-header h1 {
+  font-size: 28px;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.news-header p {
+  color: #6c757d;
+  font-size: 15px;
+}
+
+.news-form-new {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.field-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #495057;
+  font-size: 14px;
+}
+
+.modern-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.modern-input:focus {
+  border-color: #007bff;
+}
+
+/* Custom Upload Box */
+.modern-upload-box {
+  display: block;
+  width: 100%;
+  height: 200px;
+  border: 2px dashed #ced4da;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.modern-upload-box:hover {
+  border-color: #007bff;
+  background-color: #f1f8ff;
+}
+
+.placeholder-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #adb5bd;
+}
+
+.placeholder-text .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.preview-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.preview-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.preview-wrap:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Quill Editor Styling */
+.modern-quill-container .ql-toolbar {
+  border-radius: 8px 8px 0 0;
+  background-color: #f8f9fa;
+}
+
+.modern-quill-container .ql-container {
+  border-radius: 0 0 8px 8px;
+  min-height: 250px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.modern-submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.modern-submit-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.modern-submit-btn:active {
+  transform: scale(0.98);
+}
+
+.modern-submit-btn:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .news-card {
+    padding: 20px;
+  }
+}
