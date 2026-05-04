@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import "/src/styles/global.css";
 import Navbar from "./components/Navbar";
 import SliderSection from "./components/SliderSection";
-import Podcast from "./components/Podcast";
 import WhatsAppButton from "./components/WhatsAppButton";
+
+// Lazy load heavy components
+const Podcast = React.lazy(() => import("./components/Podcast"));
 // import SuccessStories from "./components/SuccessStories";
 import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery";
@@ -40,8 +42,9 @@ const App = () => {
         <Route path="/" element={
           <>
             <SliderSection sliderData={sliderData} />
-            <Podcast />
-            {/* <SuccessStories /> */}
+            <React.Suspense fallback={<div className="loading-placeholder">Loading Podcast...</div>}>
+              <Podcast />
+            </React.Suspense>
           </>
         } />
         <Route path="/gallery" element={<Gallery />} />

@@ -21,6 +21,7 @@ const Podcast = () => {
                   src={`https://www.youtube.com/embed/${video.youtubeId}`}
                   title={video.title}
                   allowFullScreen
+                  loading="lazy"
                 ></iframe>
               </div>
               <p>{video.title}</p>
